@@ -1,0 +1,30 @@
+.aboutMe{
+    background: $color-gray-1;
+    .col{
+        padding: 0;
+        text-align: center;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .bar__Style{
+        padding: 0;
+        background: $color-gray-0;
+        display: flex;
+        justify-content: space-between;
+        .bar__Fill{
+        background: $color-orange-0;
+        height: 24px;
+        .tag{
+            width: 110px;
+            background: $color-orange-1;
+            text-align: center;
+            color: $color-white;
+        }
+        }
+        span{
+            color: $color-black;
+        }
+    }  
+}

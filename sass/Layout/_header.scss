@@ -1,0 +1,80 @@
+.header{
+    background: url(../../img/background_carousel.jpg) no-repeat fixed;
+    height: 700px;
+    background-size: cover;
+    .headerBG{
+        background: rgba(102, 39, 39, 0.55);
+        height: 100%;
+        width: 100%;
+    }
+    .navbar{
+        .navbar-toggler{
+            background: $color-gray-0;
+            &:hover, 
+            &:focus{
+                background: $color-white;
+                box-shadow: none;
+            }
+        }
+        .navbar-nav{
+            .nav-item{
+                margin-left: $mg-3;
+                position: relative;
+                a{
+                    color: $color-white;
+                    font-size: $fs-0;
+                }
+                .active{
+                    a{
+                        color: $color-blue-0;
+                    }
+                    &:after{
+                        @include bottomLine(2px, $color-blue-0);
+                    }
+                }
+                &:hover{
+                    transition: all .5s;
+                    a{
+                        color: $color-blue-0;
+                    }
+                    &:after{
+                        @include bottomLine(2px, $color-blue-0);
+                    }
+                }
+            }
+        }
+    }
+    .header__Info{
+        height: 500px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+        a{
+            color: $color-blue-0;
+        }
+        button{
+            width: 280px;
+            padding: 0 $pd-1;
+            margin: 0 auto;
+            letter-spacing: 0.25em;
+            background: transparent;
+            color: $color-white;
+            border: 2px solid $color-white;
+            transition: all .5s ease-in;
+            &:hover{
+                background: $color-blue-0;
+                border: $color-blue-0;
+                i{
+                    transition: all .5s ease-in;
+                    transform: rotate(90deg);
+                }
+            }
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }  
+}

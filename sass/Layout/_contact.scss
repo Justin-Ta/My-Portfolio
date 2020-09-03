@@ -1,0 +1,16 @@
+.contactMe{
+    background: $color-gray-1;
+    .contactMe__content{
+        width: 80%;
+        margin: 0 auto;
+        p:hover{
+            color: $color-blue-0;
+        }
+        a{
+            color: $color-black;
+            &:hover{
+                color: $color-blue-0;
+            }
+        }
+    }
+}
