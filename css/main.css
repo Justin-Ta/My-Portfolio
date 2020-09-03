@@ -208,8 +208,17 @@ span {
   color: #000000;
 }
 
+.myProject {
+  background: #000000;
+}
+
 .myProject .myProjectContent .projectItem {
   position: relative;
+}
+
+.myProject .myProjectContent .projectItem img {
+  border: 1 solid transparent;
+  border-radius: 5px;
 }
 
 .myProject .myProjectContent .projectItem:hover .item__Info {
@@ -219,6 +228,8 @@ span {
 }
 
 .myProject .myProjectContent .projectItem .item__Info {
+  border: 1 solid transparent;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,7 +1,12 @@
 .myProject{
+    background: $color-black;
     .myProjectContent{
         .projectItem{
             position: relative;
+            img{
+                border: 1 solid transparent;
+                border-radius: 5px;
+            }
                 &:hover{
                     .item__Info{
                         transition: all 0.7s ease-in-out;
@@ -9,6 +14,8 @@
                     }
                 }
             .item__Info{
+                border: 1 solid transparent;
+                border-radius: 5px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
