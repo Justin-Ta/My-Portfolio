@@ -57,25 +57,7 @@
             color: $color-blue-0;
         }
         button{
-            width: 280px;
-            padding: 0 $pd-1;
-            margin: 0 auto;
-            letter-spacing: 0.25em;
-            background: transparent;
-            color: $color-white;
-            border: 2px solid $color-white;
-            transition: all .5s ease-in;
-            &:hover{
-                background: $color-blue-0;
-                border: $color-blue-0;
-                i{
-                    transition: all .5s ease-in;
-                    transform: rotate(90deg);
-                }
-            }
-            &:focus{
-                box-shadow: none;
-            }
+            @include buttonStyle(280px, $color-white, $color-blue-0);
         }
     }  
 }

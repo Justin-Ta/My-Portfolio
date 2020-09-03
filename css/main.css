@@ -52,7 +52,7 @@ span {
 }
 
 .header {
-  background: url(../../img/background_carousel.jpg) no-repeat fixed;
+  background: no-repeat fixed;
   height: 700px;
   background-size: cover;
 }
@@ -206,6 +206,76 @@ span {
 
 .aboutMe .bar__Style span {
   color: #000000;
+}
+
+.myProject .myProjectContent .projectItem {
+  position: relative;
+}
+
+.myProject .myProjectContent .projectItem:hover .item__Info {
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  opacity: 1;
+}
+
+.myProject .myProjectContent .projectItem .item__Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  position: absolute;
+  background: #05C2C9;
+  top: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.myProject .myProjectContent .projectItem .item__Info .content {
+  text-align: center;
+}
+
+.myProject .myProjectContent .projectItem .item__Info .content h4 {
+  color: #E44D26;
+}
+
+.myProject .myProjectContent .projectItem .item__Info .content p {
+  color: #000000;
+}
+
+.myProject .myProjectContent .projectItem .item__Info .content button {
+  width: 200px;
+  padding: 0 5px;
+  margin: 0 auto;
+  letter-spacing: 0.25em;
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.myProject .myProjectContent .projectItem .item__Info .content button:hover {
+  background: #c7745f;
+  border: #c7745f;
+}
+
+.myProject .myProjectContent .projectItem .item__Info .content button:hover i {
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.myProject .myProjectContent .projectItem .item__Info .content button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .contactMe {

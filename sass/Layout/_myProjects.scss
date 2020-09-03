@@ -1,0 +1,38 @@
+.myProject{
+    .myProjectContent{
+        .projectItem{
+            position: relative;
+                &:hover{
+                    .item__Info{
+                        transition: all 0.7s ease-in-out;
+                        opacity: 1;
+                    }
+                }
+            .item__Info{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                position: absolute;
+                background: $color-blue-0;
+                top: 0%;
+                right: 0%;
+                width: 100%;
+                height: 100%;
+                .content{
+                    text-align: center;
+                    h4{
+                        color: $color-orange-0;
+                    }
+                    p{
+                        color: $color-black;
+                    }
+                    button{
+                        @include buttonStyle(200px, $color-white, $color-orange-1);
+                    }
+                }
+            }
+        }
+
+    }
+}

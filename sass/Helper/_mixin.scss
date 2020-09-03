@@ -8,3 +8,24 @@
     bottom: 0;
     background-color: $color;
 }
+@mixin buttonStyle($width, $textColor, $hoverColor){
+            width: $width;
+            padding: 0 $pd-1;
+            margin: 0 auto;
+            letter-spacing: 0.25em;
+            background: transparent;
+            color: $textColor;
+            border: 2px solid $textColor;
+            transition: all .5s ease-in;
+            &:hover{
+                background: $hoverColor;
+                border: $hoverColor;
+                i{
+                    transition: all .5s ease-in;
+                    transform: rotate(90deg);
+                }
+            }
+            &:focus{
+                box-shadow: none;
+            }
+}
