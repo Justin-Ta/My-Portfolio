@@ -1,6 +1,5 @@
 .header{
-    background: no-repeat fixed;
-    
+    background: no-repeat;
     height: 700px;
     background-size: cover;
     .headerBG{
@@ -11,8 +10,7 @@
     .navbar{
         .navbar-toggler{
             background: $color-gray-0;
-            &:hover, 
-            &:focus{
+            &:hover, &:focus{
                 background: $color-white;
                 box-shadow: none;
             }
@@ -28,18 +26,19 @@
                 .active{
                     a{
                         color: $color-blue-0;
+                        &:after{
+                            @include bottomLine(2px, $color-blue-0);
+                        }
                     }
-                    &:after{
-                        @include bottomLine(2px, $color-blue-0);
-                    }
+                    
                 }
                 &:hover{
                     transition: all .5s;
                     a{
                         color: $color-blue-0;
-                    }
-                    &:after{
-                        @include bottomLine(2px, $color-blue-0);
+                        &:after{
+                            @include bottomLine(2px, $color-blue-0);
+                        }
                     }
                 }
             }
@@ -58,6 +57,7 @@
         }
         button{
             @include buttonStyle(280px, $color-white, $color-blue-0);
+            
         }
     }  
 }

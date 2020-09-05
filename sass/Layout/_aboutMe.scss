@@ -1,30 +1,52 @@
 .aboutMe{
     background: $color-gray-1;
-    .col{
-        padding: 0;
-        text-align: center;
-        img{
-            width: 50px;
-            height: 50px;
+    .aboutMe__content{
+        .img__content{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 40%;
+            }
+        }
+        p{
+            text-align: justify;
+            margin: 0;
         }
     }
-    .bar__Style{
-        padding: 0;
-        background: $color-gray-0;
+    .my__Skill{
         display: flex;
-        justify-content: space-between;
-        .bar__Fill{
-        background: $color-orange-0;
-        height: 24px;
-        .tag{
-            width: 110px;
-            background: $color-orange-1;
-            text-align: center;
-            color: $color-white;
+        align-items: center;
+        .skill__content{
+            width: 100%;
+            .col{
+                padding: 0;
+                text-align: center;
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .bar__Style{
+                padding: 0;
+                background: $color-gray-0;
+                display: flex;
+                justify-content: space-between;
+                .bar__Fill{
+                background: $color-orange-0;
+                height: 24px;
+                .tag{
+                    width: 110px;
+                    background: $color-orange-1;
+                    text-align: center;
+                    color: $color-white;
+                }
+                }
+                span{
+                    color: $color-black;
+                }
+            }  
         }
         }
-        span{
-            color: $color-black;
-        }
-    }  
 }

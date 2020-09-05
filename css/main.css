@@ -52,7 +52,7 @@ span {
 }
 
 .header {
-  background: no-repeat fixed;
+  background: no-repeat;
   height: 700px;
   background-size: cover;
 }
@@ -87,7 +87,7 @@ span {
   color: #05C2C9;
 }
 
-.header .navbar .navbar-nav .nav-item .active:after {
+.header .navbar .navbar-nav .nav-item .active a:after {
   content: "";
   display: block;
   position: absolute;
@@ -107,7 +107,7 @@ span {
   color: #05C2C9;
 }
 
-.header .navbar .navbar-nav .nav-item:hover:after {
+.header .navbar .navbar-nav .nav-item:hover a:after {
   content: "";
   display: block;
   position: absolute;
@@ -171,17 +171,50 @@ span {
   background: #F8F8F8;
 }
 
-.aboutMe .col {
+.aboutMe .aboutMe__content .img__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutMe .aboutMe__content .img__content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 40%;
+}
+
+.aboutMe .aboutMe__content p {
+  text-align: justify;
+  margin: 0;
+}
+
+.aboutMe .my__Skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe .my__Skill .skill__content {
+  width: 100%;
+}
+
+.aboutMe .my__Skill .skill__content .col {
   padding: 0;
   text-align: center;
 }
 
-.aboutMe .col img {
+.aboutMe .my__Skill .skill__content .col img {
   width: 50px;
   height: 50px;
 }
 
-.aboutMe .bar__Style {
+.aboutMe .my__Skill .skill__content .bar__Style {
   padding: 0;
   background: #b3b3b396;
   display: -webkit-box;
@@ -192,19 +225,19 @@ span {
           justify-content: space-between;
 }
 
-.aboutMe .bar__Style .bar__Fill {
+.aboutMe .my__Skill .skill__content .bar__Style .bar__Fill {
   background: #E44D26;
   height: 24px;
 }
 
-.aboutMe .bar__Style .bar__Fill .tag {
+.aboutMe .my__Skill .skill__content .bar__Style .bar__Fill .tag {
   width: 110px;
   background: #c7745f;
   text-align: center;
   color: #ffffff;
 }
 
-.aboutMe .bar__Style span {
+.aboutMe .my__Skill .skill__content .bar__Style span {
   color: #000000;
 }
 
@@ -266,6 +299,7 @@ span {
   border: 2px solid #ffffff;
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
+  margin: 20px 10px;
 }
 
 .myProject .myProjectContent .projectItem .item__Info .content button:hover {
@@ -283,6 +317,10 @@ span {
 .myProject .myProjectContent .projectItem .item__Info .content button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.myProject .myProjectContent .projectItem .item__Info .content button a {
+  color: #ffffff;
 }
 
 .contactMe {

@@ -35,10 +35,13 @@
                     }
                     button{
                         @include buttonStyle(200px, $color-white, $color-orange-1);
+                        margin: 20px 10px;
+                        a{
+                            color: $color-white;
+                        }
                     }
                 }
             }
         }
-
     }
 }
