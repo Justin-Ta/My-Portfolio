@@ -138,7 +138,7 @@ span {
   color: #05C2C9;
 }
 
-.header .header__Info button {
+.header .header__Info .form-group button {
   width: 280px;
   padding: 0 5px;
   margin: 0 auto;
@@ -150,21 +150,25 @@ span {
   transition: all .5s ease-in;
 }
 
-.header .header__Info button:hover {
+.header .header__Info .form-group button:hover {
   background: #05C2C9;
   border: #05C2C9;
 }
 
-.header .header__Info button:hover i {
+.header .header__Info .form-group button:hover i {
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.header .header__Info button:focus {
+.header .header__Info .form-group button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.header .header__Info .form-group button a {
+  color: #ffffff;
 }
 
 .aboutMe {
