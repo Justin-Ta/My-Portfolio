@@ -56,12 +56,11 @@
             color: $color-blue-0;
         }
         .form-group{
-
-            button{
-                @include buttonStyle(280px, $color-white, $color-blue-0);  
             a{
                 color: $color-white;
             }
+            button{
+                @include buttonStyle(280px, $color-white, $color-blue-0);  
             }
         }
         
