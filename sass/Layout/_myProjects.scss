@@ -27,23 +27,24 @@
                 height: 100%;
                 .content{
                     text-align: center;
+                    width: 80%;
+                    margin: 0 auto;
                     h4{
                         color: $color-orange-0;
+                        font-size: $fs-1;
+                        margin-bottom: 2px;
                     }
                     p{
                         color: $color-black;
+                        margin-bottom: 2px;
                     }
-                    .form-group{
-
                     button{
-                        @include buttonStyle( null,$color-white, $color-orange-1);
+                        @include buttonStyle(null,$color-white, $color-orange-1);
                         margin: 10px;
                         a{
                             color: $color-white;
                         }
                     }
-                    }
-                    
                 }
             }
         }

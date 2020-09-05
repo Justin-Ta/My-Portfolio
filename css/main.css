@@ -279,17 +279,22 @@ span {
 
 .myProject .myProjectContent .projectItem .item__Info .content {
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .myProject .myProjectContent .projectItem .item__Info .content h4 {
   color: #E44D26;
+  font-size: 22px;
+  margin-bottom: 2px;
 }
 
 .myProject .myProjectContent .projectItem .item__Info .content p {
   color: #000000;
+  margin-bottom: 2px;
 }
 
-.myProject .myProjectContent .projectItem .item__Info .content .form-group button {
+.myProject .myProjectContent .projectItem .item__Info .content button {
   padding: 0 5px;
   margin: 0 auto;
   letter-spacing: 0.25em;
@@ -301,24 +306,24 @@ span {
   margin: 10px;
 }
 
-.myProject .myProjectContent .projectItem .item__Info .content .form-group button:hover {
+.myProject .myProjectContent .projectItem .item__Info .content button:hover {
   background: #c7745f;
   border: #c7745f;
 }
 
-.myProject .myProjectContent .projectItem .item__Info .content .form-group button:hover i {
+.myProject .myProjectContent .projectItem .item__Info .content button:hover i {
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.myProject .myProjectContent .projectItem .item__Info .content .form-group button:focus {
+.myProject .myProjectContent .projectItem .item__Info .content button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.myProject .myProjectContent .projectItem .item__Info .content .form-group button a {
+.myProject .myProjectContent .projectItem .item__Info .content button a {
   color: #ffffff;
 }
 
