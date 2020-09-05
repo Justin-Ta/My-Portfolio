@@ -33,13 +33,17 @@
                     p{
                         color: $color-black;
                     }
+                    .form-group{
+
                     button{
-                        @include buttonStyle(200px, $color-white, $color-orange-1);
-                        margin: 20px 10px;
+                        @include buttonStyle( null,$color-white, $color-orange-1);
+                        margin: 10px;
                         a{
                             color: $color-white;
                         }
                     }
+                    }
+                    
                 }
             }
         }

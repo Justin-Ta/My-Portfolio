@@ -289,8 +289,7 @@ span {
   color: #000000;
 }
 
-.myProject .myProjectContent .projectItem .item__Info .content button {
-  width: 200px;
+.myProject .myProjectContent .projectItem .item__Info .content .form-group button {
   padding: 0 5px;
   margin: 0 auto;
   letter-spacing: 0.25em;
@@ -299,27 +298,27 @@ span {
   border: 2px solid #ffffff;
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
-  margin: 20px 10px;
+  margin: 10px;
 }
 
-.myProject .myProjectContent .projectItem .item__Info .content button:hover {
+.myProject .myProjectContent .projectItem .item__Info .content .form-group button:hover {
   background: #c7745f;
   border: #c7745f;
 }
 
-.myProject .myProjectContent .projectItem .item__Info .content button:hover i {
+.myProject .myProjectContent .projectItem .item__Info .content .form-group button:hover i {
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.myProject .myProjectContent .projectItem .item__Info .content button:focus {
+.myProject .myProjectContent .projectItem .item__Info .content .form-group button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.myProject .myProjectContent .projectItem .item__Info .content button a {
+.myProject .myProjectContent .projectItem .item__Info .content .form-group button a {
   color: #ffffff;
 }
 
