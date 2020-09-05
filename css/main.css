@@ -138,6 +138,10 @@ span {
   color: #05C2C9;
 }
 
+.header .header__Info .form-group a {
+  color: #ffffff;
+}
+
 .header .header__Info .form-group button {
   width: 280px;
   padding: 0 5px;
@@ -165,10 +169,6 @@ span {
 .header .header__Info .form-group button:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.header .header__Info .form-group button a {
-  color: #ffffff;
 }
 
 .aboutMe {
